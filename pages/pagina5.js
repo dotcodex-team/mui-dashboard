@@ -3,8 +3,8 @@ import Layout from '@layouts/DashboardLayout';
 
 export default function Index() {
   return (
-    <Layout>
-      Pagina 5
+    <Layout title="Página 5">
+      Página 5
     </Layout>
   );
 }

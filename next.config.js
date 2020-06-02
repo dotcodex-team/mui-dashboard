@@ -6,7 +6,7 @@ module.exports = {
   env: {
     appName: 'Dotcodex',
     isProd: true,
-    cookieDomain: '.jriverav.now.sh'
+    cookieDomain: '.now.sh'
   },
   webpack: (config) => {
     config.node = {

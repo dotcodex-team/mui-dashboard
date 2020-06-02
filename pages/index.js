@@ -3,7 +3,7 @@ import Layout from '@layouts/DashboardLayout';
 
 export default function Index() {
   return (
-    <Layout>
+    <Layout title="Home">
       Pagina 1
     </Layout>
   );

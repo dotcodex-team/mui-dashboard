@@ -3,6 +3,7 @@ import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import getTheme from '../theme';
 import Cookies from 'js-cookie'
+import Global from '@constants/Global'
 
 export const ThemeContext = createContext();
 
@@ -10,7 +11,12 @@ export default function ThemeContextProvider({children}){
     const [themeColor,setThemeColor] = useState('');
 
     useEffect(()=>{
-        setThemeColor(Cookies.get('userTheme'))
+        let initialColor = Global.colors[0];
+        let themeColor = Cookies.get('userTheme');
+        if(themeColor){
+            initialColor = themeColor;
+        }
+        setThemeColor(initialColor);
     },[])
 
     const changeThemeColor = (color)=>{

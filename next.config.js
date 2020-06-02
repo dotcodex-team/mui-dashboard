@@ -6,7 +6,7 @@ module.exports = {
   env: {
     appName: 'Dotcodex',
     isProd: true,
-    cookieDomain: '.now.sh'
+    cookieDomain: 'mui-dashboard.now.sh'
   },
   webpack: (config) => {
     config.node = {

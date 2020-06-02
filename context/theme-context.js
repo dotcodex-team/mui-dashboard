@@ -11,7 +11,7 @@ export default function ThemeContextProvider({children}){
     const [themeColor,setThemeColor] = useState('');
 
     useEffect(()=>{
-        let initialColor = Global.colors[0];
+        let initialColor = Global.colors[0].replace('#','');
         let themeColor = Cookies.get('userTheme');
         if(themeColor){
             initialColor = themeColor;

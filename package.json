@@ -1,0 +1,27 @@
+{
+  "name": "mui-dashboard",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.9.1",
+    "@zeit/next-css": "^1.0.1",
+    "clsx": "latest",
+    "dotenv": "^8.2.0",
+    "hex-to-rgba": "^2.0.1",
+    "js-cookie": "^2.2.1",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-color": "^2.18.1",
+    "react-cookie": "^4.0.3",
+    "react-dom": "latest",
+    "react-perfect-scrollbar": "^1.5.8"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  }
+}

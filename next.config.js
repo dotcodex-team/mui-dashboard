@@ -5,6 +5,8 @@ const path = require("path")
 module.exports = {
   env: {
     appName: 'Dotcodex',
+    isProd: true,
+    cookieDomain: '.jriverav.now.sh'
   },
   webpack: (config) => {
     config.node = {

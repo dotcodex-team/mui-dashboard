@@ -45,13 +45,11 @@ const rootClassName = classNames(classes.root, className);
             </ListItem>
         </Link>
         <Divider className={classes.logoDivider} />
-        <Link href="/mis-datos"> 
         <div className={classes.profile}>
             <React.Fragment>
                 <AvatarUser />
             </React.Fragment>
         </div>    
-        </Link>
         <Divider className={classes.profileDivider} />
         <List component="div" disablePadding>
             <NavLink href="/" activeClassName={classes.activeListItem}>

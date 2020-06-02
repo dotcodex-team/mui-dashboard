@@ -14,7 +14,9 @@ export default function ThemeContextProvider({children}){
     },[])
 
     const changeThemeColor = (color)=>{
-        Cookies.set('userTheme',color.hex.replace('#',''),{domain : 'localhost'})
+        Cookies.set('userTheme',color.hex.replace('#',''),{
+            domain : process.env.isProd ? process.env.cookieDomain : 'localhost'
+        })
         setThemeColor(color.hex.replace('#',''))
     }
     return (
